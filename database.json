@@ -1,0 +1,132 @@
+ {
+ "recipes":[
+  {
+      "id": 1,
+    "country":"Russia",
+    "name":"Pelemeni",
+    "image":"https://i.pinimg.com/564x/5a/bb/4f/5abb4feafb4744d12889e617bb198569.jpg",
+    "author":"Anton",
+    "description":"Super Good!",
+    "Ingredients":[
+      {
+      "id":1,
+      "ingredient":"Pelemeni",
+      "quantity":"1 kg"
+    },
+      {
+      "id":2,
+      "ingredient":"salt",
+      "quantity":"1 teaspoon"
+    }
+  ],
+  "instructions": [
+    "Boil water",
+    "Add salt",
+    "Add damplings"
+  ]
+  },
+  {
+    "id": 2,
+    "country": "Italy",
+    "name": "Margherita Pizza",
+    "image": "https://i.pinimg.com/564x/11/a2/eb/11a2ebfba773eb6d79576d92d9bb3225.jpg",
+    "author": "Maria",
+    "description": "Classic and Delicious!",
+    "ingredients": [
+      {
+        "id": 1,
+        "ingredient": "Pizza dough",
+        "quantity": "300 grams"
+      },
+      {
+        "id": 2,
+        "ingredient": "Tomatoes",
+        "quantity": "4"
+      },
+      {
+        "id": 3,
+        "ingredient": "Fresh mozzarella",
+        "quantity": "200 grams"
+      },
+      {
+        "id": 4,
+        "ingredient": "Basil leaves",
+        "quantity": "Handful"
+      },
+      {
+        "id": 5,
+        "ingredient": "Olive oil",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "id": 6,
+        "ingredient": "Salt",
+        "quantity": "To taste"
+      }
+    ],
+    "instructions": [
+      "Preheat the oven to 220°C",
+      "Roll out the pizza dough into a thin crust",
+      "Spread tomato sauce on the dough",
+      "Add slices of mozzarella on top",
+      "Sprinkle with fresh basil leaves",
+      "Drizzle with olive oil and sprinkle with salt",
+      "Bake for 10-12 minutes or until golden brown"
+    ]
+  },
+    {
+      "id": 3,
+      "country": "Russia",
+      "name": "Borscht",
+      "image": "https://i.pinimg.com/564x/57/a7/44/57a744a201e3439585a88490f139ad27.jpg",
+      "author": "Olga",
+      "description": "A hearty and flavorful beet soup that's perfect for cold winter days.",
+      "Ingredients": [
+        {
+          "id": 1,
+          "ingredient": "Beets",
+          "quantity": "1 kg"
+        },
+        {
+          "id": 2,
+          "ingredient": "Potatoes",
+          "quantity": "500g"
+        },
+        {
+          "id": 3,
+          "ingredient": "Carrots",
+          "quantity": "2 medium"
+        },
+        {
+          "id": 4,
+          "ingredient": "Onions",
+          "quantity": "1 large"
+        },
+        {
+          "id": 5,
+          "ingredient": "Cabbage",
+          "quantity": "1 small head"
+        },
+        {
+          "id": 6,
+          "ingredient": "Beef broth",
+          "quantity": "1 liter"
+        },
+        {
+          "id": 7,
+          "ingredient": "Sour cream",
+          "quantity": "1/2 cup"
+        }
+      ],
+      "instructions": [
+        "Peel and chop the beets, potatoes, carrots, and onions.",
+        "Saute the onions in a large pot until translucent.",
+        "Add the beets, potatoes, carrots, and beef broth to the pot.",
+        "Bring to a boil, then reduce heat and simmer until vegetables are tender.",
+        "Add shredded cabbage and cook for an additional 10 minutes.",
+        "Serve hot with a dollop of sour cream."
+      ]
+    }
+  ]
+}  
+  
