@@ -9,17 +9,15 @@ import Loader from './UI/Loader';
 function RecipeList(props) {
   const [recipes, setRecipes] = useState([]);
   const [searchInput, setSeatchInput] = useState('');
-  const [flag, setFlag] = useState('');
   const [isLoding, setIsLoding] = useState(false);
 
 
   useEffect(()=>{
 setIsLoding(true)
-axios.get("http://localhost:4001/recipes").then(res=>{setRecipes(res.data)
-axios.get(`https://restcountries.com/v3.1/name/${recipes.country}`).then(res=>setFlag(res.data))
-setIsLoding(false)
+axios.get("http://localhost:4001/recipes").then(res=>{ setRecipes(res.data)
 })
-  },[])
+setIsLoding(false)
+},[])
   
 
   const inputSearchHandler=(e)=>{

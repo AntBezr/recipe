@@ -1,6 +1,6 @@
 import React from 'react';
 
-function RecipeInfo(props) {
+function RecipeInfo() {
   return (
     <div>
       Info about recepie will be here 
