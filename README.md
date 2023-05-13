@@ -10,3 +10,7 @@ You may also see any lint errors in the console.
 
 Runs json server with recepies.
 Open [http://localhost:4001](http://localhost:4001) to view it in browser
+
+### Known Issues
+
+- If you delete ingredient in new recipe that not last it will delete all the ingredients

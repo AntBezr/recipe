@@ -4,6 +4,11 @@ import Loader from './UI/Loader';
 
 function AddRecipe() {
   const [countryList, setCountryList]= useState([])
+  const [recipeName, setRecipeName]= useState('')
+  const [recipeAuthor, setAuthor]= useState('')
+  const [recipeCountry, setCountry]= useState('')
+  const [recipeDescription, setDescription]= useState('')
+  const [recipeImage, setImage]= useState('')
   const [ingredientsList, setIngredientsList]= useState([{id:1, ingredient:"", quantity:""}])
   const [isLoding, setIsLoding] = useState(false);
   useEffect(()=>{
@@ -24,11 +29,40 @@ function AddRecipe() {
     const deleteValue = [...ingredientsList]
     deleteValue.splice(i,1)
     setIngredientsList(deleteValue)
-
   }
 
-  const changeHandler=()=>{
-  
+  const changeHandler=(e,i)=>{
+    const {name,value} = e.target
+    let changeValue=[...ingredientsList]
+    switch (name) {
+      case "ingredient":
+        changeValue=[...ingredientsList]
+        changeValue[i][name]=value
+        setIngredientsList(changeValue)
+        break;
+      case "quantity":
+        changeValue=[...ingredientsList]
+        changeValue[i][name]=value
+        setIngredientsList(changeValue) 
+        break;
+      case "name":
+        console.log(value);
+        setRecipeName(value)
+        break
+      case "author":
+        setAuthor(value)
+        break
+      case "country":
+        setCountry(value)
+        break
+      case "description":
+        setDescription(value)
+        break
+      case "image":
+        setImage(value)
+        break
+    }
+   
   }
 
   if (isLoding){
@@ -43,24 +77,24 @@ function AddRecipe() {
       <form action="">
         <div className='inputBox'>
         <label htmlFor="name">Name</label>
-        <input type="text" name='name' id='name'/>
+        <input type="text" name='name' id='name' onChange={(e)=>{changeHandler(e)}}/>
         </div>
         <div className='inputBox'>
         <label htmlFor="author" >Aithor</label>
-        <input type="text" name='author' id='author'/>
+        <input type="text" name='author' id='author' onChange={(e)=>{changeHandler(e)}}/>
         </div>
         <div className='inputBox'>
-      <select name="country" id="country">       
+      <select name="country" id="country" onChange={(e)=>{changeHandler(e)}}>       
       {  countryList.map(country=>{ return(<option key ={country} value={country}>{country}</option>)})} 
       </select>
         </div>
         <div className='inputBox'>
         <label htmlFor="description">Description</label>
-        <textarea  name='description' id='description'/>
+        <textarea  name='description' id='description' onChange={(e)=>{changeHandler(e)}}/>
         </div>
         <div className='inputBox'>
         <label htmlFor="image">Image</label>
-        <input type="text" name='image' id='image'/>
+        <input type="text" name='image' id='image' onChange={(e)=>{changeHandler(e)}}/>
         </div>
         <div className='ingredients'>
           <div className='ingredientBox'>
@@ -69,17 +103,15 @@ function AddRecipe() {
 
         </div>
         <div>
-          <button onClick={addIngredientHandler} >Add</button>
             {
               ingredientsList.map((val, i)=>( <div className='ingredientBox' key={i}>
               <input type="text" name='ingredient' value={val.ingredient} onChange={(e)=>{changeHandler(e,i)}}/>
               <input type="text" name='quantity' value={val.quantity} onChange={(e)=>{changeHandler(e,i)}}/>
               <button onClick={()=>deleteHandler(i)}>x</button>
               </div>)
-                )
-             
-              
+                ) 
             }
+            <button onClick={addIngredientHandler} >Add</button>
           </div>
         
    
