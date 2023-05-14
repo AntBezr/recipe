@@ -1,79 +1,79 @@
- {
- "recipes":[
-  {
+{
+  "recipes": [
+    {
       "id": 1,
-    "country":"Russia",
-    "name":"Pelemeni",
-    "image":"https://i.pinimg.com/564x/5a/bb/4f/5abb4feafb4744d12889e617bb198569.jpg",
-    "author":"Anton",
-    "description":"Super Good!",
-    "Ingredients":[
-      {
-      "id":1,
-      "ingredient":"Pelemeni",
-      "quantity":"1 kg"
+      "country": "Russia",
+      "name": "Pelemeni",
+      "image": "https://i.pinimg.com/564x/5a/bb/4f/5abb4feafb4744d12889e617bb198569.jpg",
+      "author": "Anton",
+      "description": "Super Good!",
+      "Ingredients": [
+        {
+          "id": 1,
+          "ingredient": "Pelemeni",
+          "quantity": "1 kg"
+        },
+        {
+          "id": 2,
+          "ingredient": "salt",
+          "quantity": "1 teaspoon"
+        }
+      ],
+      "instructions": [
+        "Boil water",
+        "Add salt",
+        "Add damplings"
+      ]
     },
-      {
-      "id":2,
-      "ingredient":"salt",
-      "quantity":"1 teaspoon"
-    }
-  ],
-  "instructions": [
-    "Boil water",
-    "Add salt",
-    "Add damplings"
-  ]
-  },
-  {
-    "id": 2,
-    "country": "Italy",
-    "name": "Margherita Pizza",
-    "image": "https://i.pinimg.com/564x/11/a2/eb/11a2ebfba773eb6d79576d92d9bb3225.jpg",
-    "author": "Maria",
-    "description": "Classic and Delicious!",
-    "ingredients": [
-      {
-        "id": 1,
-        "ingredient": "Pizza dough",
-        "quantity": "300 grams"
-      },
-      {
-        "id": 2,
-        "ingredient": "Tomatoes",
-        "quantity": "4"
-      },
-      {
-        "id": 3,
-        "ingredient": "Fresh mozzarella",
-        "quantity": "200 grams"
-      },
-      {
-        "id": 4,
-        "ingredient": "Basil leaves",
-        "quantity": "Handful"
-      },
-      {
-        "id": 5,
-        "ingredient": "Olive oil",
-        "quantity": "2 tablespoons"
-      },
-      {
-        "id": 6,
-        "ingredient": "Salt",
-        "quantity": "To taste"
-      }
-    ],
-    "instructions": [
-      "Preheat the oven to 220°C",
-      "Roll out the pizza dough into a thin crust",
-      "Spread tomato sauce on the dough",
-      "Add slices of mozzarella on top",
-      "Sprinkle with fresh basil leaves",
-      "Drizzle with olive oil and sprinkle with salt",
-      "Bake for 10-12 minutes or until golden brown"
-    ]
-  },
+    {
+      "id": 2,
+      "country": "Italy",
+      "name": "Margherita Pizza",
+      "image": "https://i.pinimg.com/564x/11/a2/eb/11a2ebfba773eb6d79576d92d9bb3225.jpg",
+      "author": "Maria",
+      "description": "Classic and Delicious!",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingredient": "Pizza dough",
+          "quantity": "300 grams"
+        },
+        {
+          "id": 2,
+          "ingredient": "Tomatoes",
+          "quantity": "4"
+        },
+        {
+          "id": 3,
+          "ingredient": "Fresh mozzarella",
+          "quantity": "200 grams"
+        },
+        {
+          "id": 4,
+          "ingredient": "Basil leaves",
+          "quantity": "Handful"
+        },
+        {
+          "id": 5,
+          "ingredient": "Olive oil",
+          "quantity": "2 tablespoons"
+        },
+        {
+          "id": 6,
+          "ingredient": "Salt",
+          "quantity": "To taste"
+        }
+      ],
+      "instructions": [
+        "Preheat the oven to 220°C",
+        "Roll out the pizza dough into a thin crust",
+        "Spread tomato sauce on the dough",
+        "Add slices of mozzarella on top",
+        "Sprinkle with fresh basil leaves",
+        "Drizzle with olive oil and sprinkle with salt",
+        "Bake for 10-12 minutes or until golden brown"
+      ]
+    },
     {
       "id": 3,
       "country": "Russia",
@@ -126,7 +126,57 @@
         "Add shredded cabbage and cook for an additional 10 minutes.",
         "Serve hot with a dollop of sour cream."
       ]
+    },
+    {
+      "country": "Russia",
+      "name": "Homemade roast",
+      "image": "https://img1.russianfood.com/dycontent/images_upl/465/big_464858.jpg",
+      "author": "Anton",
+      "description": "A simple but very fragrant and tasty dish for a family lunch or dinner.",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingredient": "Pork loin without bone",
+          "quantity": " 1 kg"
+        },
+        {
+          "id": 2,
+          "ingredient": "Fresh pork fat",
+          "quantity": "50 g"
+        },
+        {
+          "id": 3,
+          "ingredient": "Butter ",
+          "quantity": "50 g"
+        },
+        {
+          "id": 4,
+          "ingredient": "Potato ",
+          "quantity": "1 kg"
+        },
+        {
+          "id": 5,
+          "ingredient": "Bell pepper ",
+          "quantity": "2 pcs."
+        },
+        {
+          "id": 6,
+          "ingredient": "Carrot",
+          "quantity": "2 pcs"
+        },
+        {
+          "id": 7,
+          "ingredient": "Onion",
+          "quantity": "2 pcs."
+        },
+        {
+          "id": 8,
+          "ingredient": "Garlic ",
+          "quantity": "2 cloves "
+        }
+      ],
+      "instructions": "1. In a saucepan, melt the lard, cut into small cubes.\nAdd meat cut into small pieces. Fry until golden brown.\n2.Then add sliced ​​carrots. Fry 5 minutes.\n3.Onion cut into half rings. Fry 5 minutes.\n4.Bulgarian pepper, cut into slices. 5 more minutes.\n5.Add coarsely chopped potatoes, a piece of butter, 200 ml of water, spices, dried parsley and salt. Do not stir.\nCover, reduce heat and simmer for 40 minutes over low heat.\n6.At the end of cooking, add chopped fresh herbs, chopped garlic. Mix and remove from fire.\n7.Bon appetit!",
+      "id": 4
     }
   ]
-}  
-  
+}

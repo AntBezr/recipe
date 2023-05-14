@@ -8,6 +8,7 @@ function AddRecipe() {
   const [recipeAuthor, setAuthor]= useState('')
   const [recipeCountry, setCountry]= useState('')
   const [recipeDescription, setDescription]= useState('')
+  const [recipeInstruction, setInstruction]= useState('')
   const [recipeImage, setImage]= useState('')
   const [ingredientsList, setIngredientsList]= useState([{id:1, ingredient:"", quantity:""}])
   const [isLoding, setIsLoding] = useState(false);
@@ -48,23 +49,42 @@ function AddRecipe() {
       case "name":
         console.log(value);
         setRecipeName(value)
-        break
+        break;
       case "author":
         setAuthor(value)
-        break
+        break;
       case "country":
         setCountry(value)
-        break
+        break;
       case "description":
         setDescription(value)
-        break
+        break;
+      case "instruction":
+        setInstruction(value)
+        break;
       case "image":
         setImage(value)
-        break
+        break;
+        default:
+          break
     }
-   
-  }
-
+  };
+const sendHendler=()=>{
+  axios.post("http://localhost:4001/recipes",{
+    "country": recipeCountry,
+    "name": recipeName,
+    "image": recipeImage,
+    "author": recipeAuthor,
+    "description": recipeDescription,
+    "ingredients": ingredientsList,
+    "instructions": recipeInstruction,
+  })  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+}
   if (isLoding){
     return( 
       <Loader/>
@@ -74,7 +94,7 @@ function AddRecipe() {
     <div className='page'>
       <h1>Add new recipe</h1>
 
-      <form action="">
+      <form onSubmit={sendHendler}>
         <div className='inputBox'>
         <label htmlFor="name">Name</label>
         <input type="text" name='name' id='name' onChange={(e)=>{changeHandler(e)}}/>
@@ -91,6 +111,10 @@ function AddRecipe() {
         <div className='inputBox'>
         <label htmlFor="description">Description</label>
         <textarea  name='description' id='description' onChange={(e)=>{changeHandler(e)}}/>
+        </div>
+        <div className='inputBox'>
+        <label htmlFor="instruction">Instruction</label>
+        <textarea  name='instruction' id='instruction' onChange={(e)=>{changeHandler(e)}}/>
         </div>
         <div className='inputBox'>
         <label htmlFor="image">Image</label>
@@ -111,12 +135,12 @@ function AddRecipe() {
               </div>)
                 ) 
             }
-            <button onClick={addIngredientHandler} >Add</button>
+            <button onClick={addIngredientHandler} >Add new ingredient</button>
           </div>
         
    
         </div>
-  
+  <button type="submit">Add recipe</button>
       </form>
 
     </div>
