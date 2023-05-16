@@ -6,4 +6,50 @@
 main{
   min-height: 85vh;
   max-width: 1290px;
+  display: flex;
+  flex-direction: column;
+}
+h1{
+  margin: 10px auto;
+}
+.inputBox{
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 300px;
+  margin: 8px;
+}
+ input , select , textarea{
+  font-size: 20px;
+  border-radius: 4px;
+  border: 1px solid;
+}
+label{
+  margin: 5px;
+  font-size: 20px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button{
+  margin: 5px;
+  width: 150px;
+  margin-bottom: 16px;
+}
+.addRecipe{
+  background-color: var(--accentColor);
+  margin-bottom: 16px;
+}
+.delete{
+  height: 20px;
+  width: 20px;
+  border-radius: 8px;
+}
+.ingredientBox{
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

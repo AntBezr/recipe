@@ -4,6 +4,7 @@ import Loader from './UI/Loader';
 import './Style/AddRecipe.css'
 
 function AddRecipe() {
+
   const [countryList, setCountryList]= useState([])
   const [recipeName, setRecipeName]= useState('')
   const [recipeAuthor, setAuthor]= useState('')
@@ -13,12 +14,14 @@ function AddRecipe() {
   const [recipeImage, setImage]= useState('')
   const [ingredientsList, setIngredientsList]= useState([{id:1, ingredient:"", quantity:""}])
   const [isLoding, setIsLoding] = useState(false);
+
   useEffect(()=>{
     setIsLoding(true)
   
     axios.get('https://restcountries.com/v3.1/all?fields=name')
       .then(res=>{setCountryList(res.data.map((country) => {return(country.name.common)}))
       });
+  
     setIsLoding(false)
   },[])
 
@@ -28,9 +31,8 @@ function AddRecipe() {
   }
 
   const deleteHandler=(i)=>{
-    const deleteValue = [...ingredientsList]
-    deleteValue.splice(i,1)
-    setIngredientsList(deleteValue)
+    const deleteValue = [...ingredientsList].filter(index=> index !== i) ;
+    return(setIngredientsList(deleteValue))
   }
 
   const changeHandler=(e,i)=>{
@@ -93,59 +95,66 @@ const sendHendler=()=>{
   
   return (
     <main>
-    <div className='page'>
+
       <h1>Add new recipe</h1>
 
       <form onSubmit={sendHendler}>
         <div className='inputBox'>
-        <label htmlFor="name">Name</label>
-        <input type="text" name='name' id='name' onChange={(e)=>{changeHandler(e)}}/>
+          <label htmlFor="name">Name</label>
+          <input type="text"  name='name' id='name' onChange={(e)=>{changeHandler(e)}}/>
         </div>
-        <div className='inputBox'>
-        <label htmlFor="author" >Aithor</label>
-        <input type="text" name='author' id='author' onChange={(e)=>{changeHandler(e)}}/>
-        </div>
-        <div className='inputBox'>
-      <select name="country" id="country" onChange={(e)=>{changeHandler(e)}}>       
-      {  countryList.map(country=>{ return(<option key ={country} value={country}>{country}</option>)})} 
-      </select>
-        </div>
-        <div className='inputBox'>
-        <label htmlFor="description">Description</label>
-        <textarea  name='description' id='description' onChange={(e)=>{changeHandler(e)}}/>
-        </div>
-        <div className='inputBox'>
-        <label htmlFor="instruction">Instruction</label>
-        <textarea  name='instruction' id='instruction' onChange={(e)=>{changeHandler(e)}}/>
-        </div>
-        <div className='inputBox'>
-        <label htmlFor="image">Image</label>
-        <input type="text" name='image' id='image' onChange={(e)=>{changeHandler(e)}}/>
-        </div>
-        <div className='ingredients'>
-          <div className='ingredientBox'>
-            <label htmlFor="">Ingredient</label>
-          <label htmlFor="">Quantity</label>
 
+        <div className='inputBox'>
+          <label htmlFor="author" >Author</label>
+          <input type="text"  name='author' id='author' onChange={(e)=>{changeHandler(e)}}/>
         </div>
-        <div>
-            {
+
+        <div className='inputBox'>
+          <label htmlFor="">Country of origin</label>
+          <select name="country"  id="country" onChange={(e)=>{changeHandler(e)}} >       
+          {countryList.map(country=>{ return(<option key ={country} value={country}>{country}</option>)})} 
+          </select>
+        </div>
+
+        <div className='inputBox'>
+          <label htmlFor="description">Description</label>
+          <textarea  name='description'  id='description' onChange={(e)=>{changeHandler(e)}}/>
+        </div>
+
+        <div className='inputBox'>
+          <label htmlFor="instruction">Instruction</label>
+          <textarea  name='instruction'  id='instruction' onChange={(e)=>{changeHandler(e)}}/>
+        </div>
+
+        <div className='inputBox'>
+          <label htmlFor="image">Image</label>
+          <input type="text" name='image'  id='image' onChange={(e)=>{changeHandler(e)}}/>
+        </div>
+
+        <div className='ingredients'>
+        
+          {
               ingredientsList.map((val, i)=>( <div className='ingredientBox' key={i}>
-              <input type="text" name='ingredient' value={val.ingredient} onChange={(e)=>{changeHandler(e,i)}}/>
-              <input type="text" name='quantity' value={val.quantity} onChange={(e)=>{changeHandler(e,i)}}/>
-              <button onClick={()=>deleteHandler(i)}>x</button>
+           
+                <div className='inputBox'>
+                  <label htmlFor="">Ingredient</label>
+                  <input type="text" name='ingredient' value={val.ingredient} onChange={(e)=>{changeHandler(e,i)}}/>  
+                </div>
+                <div className='inputBox'><label htmlFor="">Quantity</label>
+              <input type="text" name='quantity' value={val.quantity} onChange={(e)=>{changeHandler(e,i)}}/></div>
+              <button className='delete' onClick={()=>deleteHandler(i)}>x</button>
               </div>)
                 ) 
             }
-            <button onClick={addIngredientHandler} >Add new ingredient</button>
-          </div>
-        
-   
+           
         </div>
-  <button type="submit">Add recipe</button>
+        <button onClick={addIngredientHandler} >Add new ingredient</button>
+     
+   
+      
+  <button className='addRecipe' type="submit">Add recipe</button>
       </form>
 
-    </div>
     </main>
   );
 }
