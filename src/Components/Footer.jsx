@@ -4,7 +4,7 @@ import './Style/Footer.css'
 function Footer(props) {
   return (
     <footer>
-      Footer will be here
+      <small>React23K Anton Bezruchenkov</small>
     </footer>
   );
 }

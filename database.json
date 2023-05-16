@@ -74,59 +74,7 @@
         "Bake for 10-12 minutes or until golden brown"
       ]
     },
-    {
-      "id": 3,
-      "country": "Russia",
-      "name": "Borscht",
-      "image": "https://i.pinimg.com/564x/57/a7/44/57a744a201e3439585a88490f139ad27.jpg",
-      "author": "Olga",
-      "description": "A hearty and flavorful beet soup that's perfect for cold winter days.",
-      "Ingredients": [
-        {
-          "id": 1,
-          "ingredient": "Beets",
-          "quantity": "1 kg"
-        },
-        {
-          "id": 2,
-          "ingredient": "Potatoes",
-          "quantity": "500g"
-        },
-        {
-          "id": 3,
-          "ingredient": "Carrots",
-          "quantity": "2 medium"
-        },
-        {
-          "id": 4,
-          "ingredient": "Onions",
-          "quantity": "1 large"
-        },
-        {
-          "id": 5,
-          "ingredient": "Cabbage",
-          "quantity": "1 small head"
-        },
-        {
-          "id": 6,
-          "ingredient": "Beef broth",
-          "quantity": "1 liter"
-        },
-        {
-          "id": 7,
-          "ingredient": "Sour cream",
-          "quantity": "1/2 cup"
-        }
-      ],
-      "instructions": [
-        "Peel and chop the beets, potatoes, carrots, and onions.",
-        "Saute the onions in a large pot until translucent.",
-        "Add the beets, potatoes, carrots, and beef broth to the pot.",
-        "Bring to a boil, then reduce heat and simmer until vegetables are tender.",
-        "Add shredded cabbage and cook for an additional 10 minutes.",
-        "Serve hot with a dollop of sour cream."
-      ]
-    },
+   
     {
       "country": "Russia",
       "name": "Homemade roast",
