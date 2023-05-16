@@ -17,9 +17,9 @@ function App() {
           <Route index element={<Home/>}/>
           <Route path='recipes' element={<RecipeList/>}/>
           <Route path='addRecipe' element={<AddRecipe/>}/>
-          <Route path='recipeInfo' element={<RecipeInfo/>}/>
+          <Route path='recipes/:id' element={<RecipeInfo/>}/>
 
-        </Route>
+        </Route>  
       </Routes>
      </BrowserRouter>
     </div>

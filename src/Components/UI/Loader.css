@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  min-height: 80vh;
+  min-height: 85vh;
 }
 .loader {
   width: 60px;

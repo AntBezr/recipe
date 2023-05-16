@@ -6,8 +6,40 @@
 
 header{
   width: 100vw;
-  height: 15vh;
+  height: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  
+  background-color: var(--hedFootBG);
+}
+a{
+  color: var(--hedFootText) ;
+  text-decoration: none;
+  margin: 4px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a:hover{
+  color: var(--btnText) ;
+}
+
+li{
+list-style-type: none;
+}
+nav ul{
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+nav{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }

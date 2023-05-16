@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Loader from './UI/Loader';
+import './Style/AddRecipe.css'
 
 function AddRecipe() {
   const [countryList, setCountryList]= useState([])
@@ -91,6 +92,7 @@ const sendHendler=()=>{
   )}
   
   return (
+    <main>
     <div className='page'>
       <h1>Add new recipe</h1>
 
@@ -144,6 +146,7 @@ const sendHendler=()=>{
       </form>
 
     </div>
+    </main>
   );
 }
 

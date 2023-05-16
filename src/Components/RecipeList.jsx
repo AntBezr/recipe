@@ -3,6 +3,7 @@ import Card from './UI/Card';
 import { useState, useEffect} from 'react';
 import axios from 'axios';
 import Loader from './UI/Loader';
+import './Style/RecipeList.css'
 
 
 
@@ -34,11 +35,11 @@ setIsLoding(false)
     return( 
       <Loader/>
       )
-  
   }
 
   return (
-    <div>
+    <main>
+    <div className='ds'>
       <input type="text" onChange={inputSearchHandler}/>
 
 
@@ -46,15 +47,18 @@ setIsLoding(false)
   {searchFilter.map(item=>{
     return(
       <Card
+      id={item.id}
       key={item.name}
       name={item.name}
       country={item.country}
       image={item.image}
+    
       />
     )
   })}
 </div>
     </div>
+    </main>
   );
 }
 

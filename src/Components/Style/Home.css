@@ -1,0 +1,42 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+main{
+  max-width: 1290px;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.hero{
+  min-height: 50vh;
+  background: url(../../images/LandingBg.avif) no-repeat  fixed  
+}
+
+.cardsBox{
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+min-height: 35vh;
+}
+
+.linkBox{
+  width: 360px;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border:solid black 0.5px;
+  margin: auto 0;
+}
+.linkBox h3, p,a{
+  margin: 8px;
+}
+a{
+  display: flex;
+  justify-content: flex-start;
+
+}

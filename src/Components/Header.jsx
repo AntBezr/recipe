@@ -5,7 +5,8 @@ import './Style/Header.css'
 function Header() {
   return (
     <header>
-<Link to={'/'}><h1> BestRecipes</h1></Link>
+
+      <Link to={'/'}><h1> Punny Palate</h1></Link>
       
       <nav>
         <ul>
@@ -14,6 +15,8 @@ function Header() {
           <li><NavLink to={'/addRecipe'}>Add new recipe</NavLink></li>
         </ul>
       </nav>
+
+
     </header>
   );
 }

@@ -1,0 +1,17 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+main{
+  max-width: 1290px;
+  min-height: 85vh;
+  background-color: var(--) ;
+}
+.template {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}

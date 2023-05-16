@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Card.css'
 import Loader from './Loader';
 
-function Card({name,country,image}) {
+function Card({id,name,country,image}) {
   const [flag, setFlag] = useState('');
   const [isLoding, setIsLoding] = useState(false);
 
@@ -15,12 +15,17 @@ function Card({name,country,image}) {
 setIsLoding(false)
   },[]
   )
+
+  if (isLoding){
+    return( 
+      <Loader/>
+  )}
   return (
     <div className='Card'>
       <div className='country'><img src={flag} alt={country} /></div>
       <div className='image'><img src={image} alt={name} /></div>
         <h3>{name}</h3>  
-        <Link to={"/recipeInfo"}><button >See more...</button></Link>
+        <Link to={id.toString()}><button >See more...</button></Link>
     </div>
   );
 }
