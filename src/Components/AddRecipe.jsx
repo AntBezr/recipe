@@ -18,12 +18,12 @@ function AddRecipe() {
   useEffect(()=>{
     setIsLoding(true)
   
-   /*  axios.get('https://restcountries.com/v3.1/all?fields=name')
-      .then(res=>{setCountryList(res.data.map((country) => {return(country.name.common)}))
-      }); */
-    axios.get('https://countriesnow.space/api/v0.1/countries')
+    axios.get('https://restcountries.com/v2/all?fields=name')
+    .then(res=>{setCountryList(res.data.map((country) => {return(country.name)}))
+    }); 
+ /*    axios.get('https://countriesnow.space/api/v0.1/countries')
       .then(res=>{setCountryList(res.data.data.map((country) => {return(country.country)}))
-      });
+      }); */
   
     setIsLoding(false)
   },[])
@@ -95,7 +95,8 @@ const sendHendler=()=>{
   )}
   
   return (
-    <main>
+    <div className='mainAdd'>
+    <div className='addNew'>
 
       <h1>Add new recipe</h1>
 
@@ -159,7 +160,8 @@ const sendHendler=()=>{
   <button className='addRecipe' type="submit">Add recipe</button>
       </form>
 
-    </main>
+    </div>
+    </div>
   );
 }
 

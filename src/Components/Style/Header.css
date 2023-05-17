@@ -12,6 +12,7 @@ header{
   justify-content: space-between;
   background-color: var(--old-lace);
 }
+
 a{
   color: var(--caput-mortuum) ;
   text-decoration: none;
@@ -22,9 +23,11 @@ a{
   align-items: center;
   justify-content: center;
 }
+
 .hover-underline-animation:hover{
   color: var(--orange-wheel) ;
 }
+
 .hover-underline-animation {
   display: inline-block;
   position: relative; 
@@ -46,6 +49,11 @@ a{
 .hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.active{
+  color: var(--orange-wheel);
+  text-decoration: underline;
 }
 
 li{

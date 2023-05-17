@@ -20,18 +20,13 @@ axios.get("http://localhost:4001/recipes").then(res=>{ setRecipes(res.data)
 setIsLoding(false)
 },[])
   
-const Capitalize =(str)=>{
-  return str.charAt(0).toUpperCase() + str.slice(1);
-  }
 
   const inputSearchHandler=(e)=>{
     setSeatchInput((e.target.value.toLowerCase()))
   }
   
   const searchFilter = recipes.filter(recipe=>{
-
-    return recipe.name.includes(Capitalize(searchInput))
-  
+    return recipe.name.toUpperCase().includes(searchInput.toUpperCase())
   })
   
 
@@ -42,7 +37,7 @@ const Capitalize =(str)=>{
   }
 
   return (
-    <main>
+    <div className='mainList'>
     <div className='search'>
       <label htmlFor="search"  >Recipes A-Z</label>
       <input type="text" id='search'  onChange={inputSearchHandler}/>
@@ -63,7 +58,7 @@ const Capitalize =(str)=>{
   })}
 </div>
     
-    </main>
+</div>
   );
 }
 
