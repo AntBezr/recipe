@@ -10,9 +10,9 @@ function Header() {
       
       <nav>
         <ul>
-          <li><NavLink to={'/'}>Home</NavLink></li>
-          <li><NavLink to={'/recipes'}>Recipies</NavLink></li>
-          <li><NavLink to={'/addRecipe'}>Add new recipe</NavLink></li>
+          <li><NavLink to={'/'} className="hover-underline-animation">Home</NavLink></li>
+          <li><NavLink to={'/recipes'} className="hover-underline-animation">Recipies</NavLink></li>
+          <li><NavLink to={'/addRecipe'} className="hover-underline-animation">Add new recipe</NavLink></li>
         </ul>
       </nav>
 

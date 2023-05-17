@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;700&display=swap');
 :root{
-  --hedFootBG: #F4E9E6;
-  --hedFootText: #6B6059 ;
-  --mainBG: #FFFFFF;
-  --cardBG: #AEC6CF;
+  --hedFootBG: #F0EDD4;
+  --hedFootText: #998a80 ;
+  --mainBG: #fafbef;
+  --cardBG: #F0EDD4;
   --cardText: #6B6059 ;
-  --btnBG: #C9B2BA;
+  --btnBG: #ECCDB4;
   --btnText: #000000;
-  --accentColor: #D8C9A7;
-
+  --accentColor: #FEA1A1; 
+  
 }
 body {
   margin: 0;
   font-family: 'Karla', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--mainBG);
 }
 
 code {

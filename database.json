@@ -74,56 +74,121 @@
         "Bake for 10-12 minutes or until golden brown"
       ]
     },
+    
     {
-      "country": "Russia",
-      "name": "Homemade roast",
-      "image": "https://img1.russianfood.com/dycontent/images_upl/465/big_464858.jpg",
-      "author": "Anton",
-      "description": "A simple but very fragrant and tasty dish for a family lunch or dinner.",
+      "id": 4,
+      "country": "Italy",
+      "name": "Pizza Carbonara",
+      "image": "https://i.pinimg.com/564x/d0/25/f7/d025f765e240b07b7c02852107ed6e25.jpg",
+      "author": "Giovanni",
+      "description": "A twist on the classic Italian pasta dish!",
       "ingredients": [
         {
           "id": 1,
-          "ingredient": "Pork loin without bone",
-          "quantity": " 1 kg"
+          "ingredient": "Pizza dough",
+          "quantity": "300 grams"
         },
         {
           "id": 2,
-          "ingredient": "Fresh pork fat",
-          "quantity": "50 g"
+          "ingredient": "Pancetta",
+          "quantity": "100 grams"
         },
         {
           "id": 3,
-          "ingredient": "Butter ",
-          "quantity": "50 g"
+          "ingredient": "Eggs",
+          "quantity": "2"
         },
         {
           "id": 4,
-          "ingredient": "Potato ",
-          "quantity": "1 kg"
+          "ingredient": "Pecorino cheese",
+          "quantity": "50 grams"
         },
         {
           "id": 5,
-          "ingredient": "Bell pepper ",
-          "quantity": "2 pcs."
+          "ingredient": "Black pepper",
+          "quantity": "To taste"
+        }
+      ],
+      "instructions": [
+        "Preheat the oven to 220°C",
+        "Roll out the pizza dough into a thin crust",
+        "Cook the pancetta in a pan until crispy",
+        "In a bowl, beat the eggs and mix in the pecorino cheese and black pepper",
+        "Spread the egg and cheese mixture on the pizza dough",
+        "Sprinkle the cooked pancetta on top",
+        "Bake for 10-12 minutes or until golden brown"
+      ]
+    },
+    {
+      "id": 5,
+      "country": "Mexico",
+      "name": "Tacos al Pastor",
+      "image": "https://i.pinimg.com/564x/32/2e/72/322e7269248a6097207d2efa38f0e645.jpg",
+      "author": "Carlos",
+      "description": "A flavorful and traditional Mexican dish!",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingredient": "Pork shoulder",
+          "quantity": "500 grams"
+        },
+        {
+          "id": 2,
+          "ingredient": "Pineapple",
+          "quantity": "1"
+        },
+        {
+          "id": 3,
+          "ingredient": "Corn tortillas",
+          "quantity": "12"
+        },
+        {
+          "id": 4,
+          "ingredient": "Onion",
+          "quantity": "1"
+        },
+        {
+          "id": 5,
+          "ingredient": "Cilantro",
+          "quantity": "Handful"
         },
         {
           "id": 6,
-          "ingredient": "Carrot",
-          "quantity": "2 pcs"
+          "ingredient": "Lime",
+          "quantity": "2"
         },
         {
           "id": 7,
-          "ingredient": "Onion",
-          "quantity": "2 pcs."
+          "ingredient": "Achiote paste",
+          "quantity": "2 tablespoons"
         },
         {
           "id": 8,
-          "ingredient": "Garlic ",
-          "quantity": "2 cloves "
+          "ingredient": "Garlic",
+          "quantity": "3 cloves"
+        },
+        {
+          "id": 9,
+          "ingredient": "Cumin",
+          "quantity": "1 teaspoon"
+        },
+        {
+          "id": 10,
+          "ingredient": "Oregano",
+          "quantity": "1 teaspoon"
         }
       ],
-      "instructions": "1. In a saucepan, melt the lard, cut into small cubes.\nAdd meat cut into small pieces. Fry until golden brown.\n2.Then add sliced ​​carrots. Fry 5 minutes.\n3.Onion cut into half rings. Fry 5 minutes.\n4.Bulgarian pepper, cut into slices. 5 more minutes.\n5.Add coarsely chopped potatoes, a piece of butter, 200 ml of water, spices, dried parsley and salt. Do not stir.\nCover, reduce heat and simmer for 40 minutes over low heat.\n6.At the end of cooking, add chopped fresh herbs, chopped garlic. Mix and remove from fire.\n7.Bon appetit!",
-      "id": 4
-    }
+      "instructions": [
+        "Slice the pork shoulder into thin strips",
+        "In a blender, blend the pineapple, onion, garlic, achiote paste, cumin, and oregano to make a marinade",
+        "Marinate the pork in the marinade for at least 2 hours or overnight",
+        "Heat a pan and cook the marinated pork until cooked through",
+        "Warm the corn tortillas on a griddle",
+        "Fill the tortillas with the cooked pork, garnish with cilantro, and squeeze lime juice on top",
+        "Serve with salsa and enjoy!"
+        ]
+      }
+    
+    
   ]
 }

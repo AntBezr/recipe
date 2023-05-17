@@ -6,38 +6,54 @@
 
 .Card{
 position: relative;
-width: 360px;
+width: 330px;
 height: 550px;
 border-radius: 10px;
-margin: 1rem;
+margin: 3rem;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-background: var(--cardBG) ; 
-box-shadow: 10px 10px 15px;
+ background: var(--cardBG) ;  
+border: solid 1px;
 }
 
 .image img {
-  max-width: 300px;
-  max-height: 450px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
 }
 
 .image{
-  
+  min-height: 450px;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 4rem;
 }
 
 .country img{
-  position: absolute;
-  top: -12px;
-  left: -12px;
   display: flex;
-  flex-wrap: wrap;
-  height: 100px;
-  width: 100px;
+  height: 100%;
+  width: 100%;
   border:solid black 1px;
   border-radius: 100px;
   background-color:var(--cardBG);
+  object-fit: cover;
+}
+
+.country{
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
 }
 
 button{
@@ -48,4 +64,8 @@ button{
   border-radius: 5px;
   border: none;
   box-shadow: 4px 4px 5px ;
+}
+button:hover{
+  cursor: pointer;
+  background-color: var(--accentColor);
 }
