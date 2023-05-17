@@ -11,6 +11,8 @@ You may also see any lint errors in the console.
 Runs json server with recepies.
 Open [http://localhost:4001](http://localhost:4001) to view it in browser
 
-### Known Issues
+### Ideas and some code solutions
 
-- If you delete ingredient in new recipe that not last it will delete all the ingredients
+Margit Tennosaar - [GitHub](https://github.com/margittennosaar)
+Valeria Vagapova - [GitHub](https://github.com/pixelsnow)
+[ChatGPT](https://chat.openai.com/)

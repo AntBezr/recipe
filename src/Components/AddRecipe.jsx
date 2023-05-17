@@ -31,8 +31,8 @@ function AddRecipe() {
   }
 
   const deleteHandler=(i)=>{
-    const deleteValue = [...ingredientsList].filter(index=> index !== i) ;
-    return(setIngredientsList(deleteValue))
+    const deleteValue = ingredientsList.filter((it, index)=> index !== i) ;
+   setIngredientsList(deleteValue)
   }
 
   const changeHandler=(e,i)=>{
@@ -50,7 +50,7 @@ function AddRecipe() {
         setIngredientsList(changeValue) 
         break;
       case "name":
-        console.log(value);
+       
         setRecipeName(value)
         break;
       case "author":
@@ -81,9 +81,7 @@ const sendHendler=()=>{
     "description": recipeDescription,
     "ingredients": ingredientsList,
     "instructions": recipeInstruction,
-  })  .then(function (response) {
-    console.log(response);
-  })
+  }) 
   .catch(function (error) {
     console.log(error);
   });
@@ -101,12 +99,12 @@ const sendHendler=()=>{
       <form onSubmit={sendHendler}>
         <div className='inputBox'>
           <label htmlFor="name">Name</label>
-          <input type="text"  name='name' id='name' onChange={(e)=>{changeHandler(e)}}/>
+          <input type="text" required name='name' id='name' onChange={(e)=>{changeHandler(e)}}/>
         </div>
 
         <div className='inputBox'>
           <label htmlFor="author" >Author</label>
-          <input type="text"  name='author' id='author' onChange={(e)=>{changeHandler(e)}}/>
+          <input type="text" required name='author' id='author' onChange={(e)=>{changeHandler(e)}}/>
         </div>
 
         <div className='inputBox'>
@@ -118,12 +116,12 @@ const sendHendler=()=>{
 
         <div className='inputBox'>
           <label htmlFor="description">Description</label>
-          <textarea  name='description'  id='description' onChange={(e)=>{changeHandler(e)}}/>
+          <textarea  name='description' required id='description' onChange={(e)=>{changeHandler(e)}}/>
         </div>
 
         <div className='inputBox'>
           <label htmlFor="instruction">Instruction</label>
-          <textarea  name='instruction'  id='instruction' onChange={(e)=>{changeHandler(e)}}/>
+          <textarea  name='instruction' required id='instruction' onChange={(e)=>{changeHandler(e)}}/>
         </div>
 
         <div className='inputBox'>
@@ -142,7 +140,7 @@ const sendHendler=()=>{
                 </div>
                 <div className='inputBox'><label htmlFor="">Quantity</label>
               <input type="text" name='quantity' value={val.quantity} onChange={(e)=>{changeHandler(e,i)}}/></div>
-              <button className='delete' onClick={()=>deleteHandler(i)}>x</button>
+              <button  className='delete' type="button" onClick={()=>deleteHandler(i)}>x</button>
               </div>)
                 ) 
             }

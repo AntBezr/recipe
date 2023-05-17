@@ -14,13 +14,17 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-background-color: #AEC6CF;
+background: var(--cardBG) ; 
 box-shadow: 10px 10px 15px;
 }
 
 .image img {
   max-width: 300px;
   max-height: 450px;
+}
+
+.image{
+  
 }
 
 .country img{
@@ -35,6 +39,7 @@ box-shadow: 10px 10px 15px;
   border-radius: 100px;
   background-color:var(--cardBG);
 }
+
 button{
   background-color: var(--btnBG);
   color: var(--btnText) ;
