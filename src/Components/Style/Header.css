@@ -10,10 +10,10 @@ header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: var(--hedFootBG);
+  background-color: var(--old-lace);
 }
 a{
-  color: var(--hedFootText) ;
+  color: var(--caput-mortuum) ;
   text-decoration: none;
   margin: 4px;
   font-size: 16px;
@@ -22,20 +22,15 @@ a{
   align-items: center;
   justify-content: center;
 }
-a:hover{
-  color: var(--accentColor) ;
-}
-a:active{
-  color: var(--accentColor) ;
+.hover-underline-animation:hover{
+  color: var(--orange-wheel) ;
 }
 .hover-underline-animation {
   display: inline-block;
-  position: relative;
-  
+  position: relative; 
 }
 
 .hover-underline-animation::after {
-  
   content: '';
   position: absolute;
   width: 100%;
@@ -43,7 +38,7 @@ a:active{
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--accentColor);
+  background-color: var(--orange-wheel);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

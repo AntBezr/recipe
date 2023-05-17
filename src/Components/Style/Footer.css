@@ -7,7 +7,9 @@
 footer{
   width: 100vw;
   height: 5vh;
-  background-color: var(--hedFootBG);
+  background-color: var(--caput-mortuum);
+  color: var(--old-lace);
+  font-weight: 800;
   display: flex;
   align-items: center;
   justify-content: center;

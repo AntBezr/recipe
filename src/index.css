@@ -9,13 +9,22 @@
   --btnText: #000000;
   --accentColor: #FEA1A1; 
   
+  --old-lace: #F5EBDCff;
+  --orange-wheel: #FC8631ff;
+  --sinopia: #D62302ff;
+  --caput-mortuum: #5C3223ff;
+  --caput-mortuum-2: #502215ff;
+}
+html{
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
   font-family: 'Karla', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--mainBG);
+  overscroll-behavior-y: none;
+  background: var(--old-lace);
 }
 
 code {

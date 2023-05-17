@@ -4,44 +4,48 @@
   box-sizing: border-box;
 }
 
+main{
+  display: flex;
+  align-items: center;
+}
+
+label{
+  font-weight: 600;
+}
+
+input{
+  border: none;
+  background-color: var(--old-lace);
+  color: var(--caput-mortuum);
+}
+
 .Card{
 position: relative;
 width: 330px;
 height: 550px;
-border-radius: 10px;
-margin: 3rem;
+border-radius: 3px; 
+margin: 2rem;
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: center;
- background: var(--cardBG) ;  
-border: solid 1px;
-}
-
-.image img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-  border-radius: 0.5rem;
+justify-content: space-between;
+background: var(--old-lace);  
+border: solid 1px var(--sinopia);
+color: var(--caput-mortuum);
 }
 
 .image{
-  min-height: 450px;
-  min-width: 300px;
+  height: 450px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem;
-  border-radius: 4rem;
 }
 
-.country img{
-  display: flex;
-  height: 100%;
-  width: 100%;
-  border:solid black 1px;
-  border-radius: 100px;
-  background-color:var(--cardBG);
+.image img {
+  min-width: 100%;
+  max-height: 100%;
+  border-radius: 3px 3px 0 0 ;
   object-fit: cover;
 }
 
@@ -56,16 +60,26 @@ border: solid 1px;
   border-radius: 10px;
 }
 
+.country img{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border:solid var(--sinopia) 1px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
 button{
-  background-color: var(--btnBG);
+  background-color: var(--old-lace);
   color: var(--btnText) ;
   width: 100px;
   height: 25px;
   border-radius: 5px;
-  border: none;
-  box-shadow: 4px 4px 5px ;
+  border: 1px solid var(--orange-wheel);
+  box-shadow: 2px 2px 4px var(--orange-wheel) ;
 }
 button:hover{
   cursor: pointer;
-  background-color: var(--accentColor);
+  background-color: var(--orange-wheel);
+  color: var(--old-lace);
 }

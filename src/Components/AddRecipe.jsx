@@ -18,8 +18,11 @@ function AddRecipe() {
   useEffect(()=>{
     setIsLoding(true)
   
-    axios.get('https://restcountries.com/v3.1/all?fields=name')
+   /*  axios.get('https://restcountries.com/v3.1/all?fields=name')
       .then(res=>{setCountryList(res.data.map((country) => {return(country.name.common)}))
+      }); */
+    axios.get('https://countriesnow.space/api/v0.1/countries')
+      .then(res=>{setCountryList(res.data.data.map((country) => {return(country.country)}))
       });
   
     setIsLoding(false)
@@ -108,10 +111,13 @@ const sendHendler=()=>{
         </div>
 
         <div className='inputBox'>
-          <label htmlFor="">Country of origin</label>
-          <select name="country"  id="country" onChange={(e)=>{changeHandler(e)}} >       
-          {countryList.map(country=>{ return(<option key ={country} value={country}>{country}</option>)})} 
-          </select>
+          <label htmlFor="countryList" >Country of origin</label>
+          <input id="countryList" list="country"/>
+          <datalist id='country' >
+          {countryList.map(country => (
+            <option key ={country} value={country}></option>
+          ))}
+        </datalist>
         </div>
 
         <div className='inputBox'>

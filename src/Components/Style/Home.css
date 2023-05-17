@@ -3,7 +3,7 @@
   padding:0;
   box-sizing: border-box;
 }
-main{
+.homeMain{
   max-width: 1290px;
   min-height: 80vh;
   display: flex;
@@ -30,14 +30,42 @@ min-height: 35vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  border:solid black 0.5px;
+  border:solid var(--sinopia) 1px;
   margin: auto 0;
 }
+
 .linkBox h3, p,a{
   margin: 8px;
 }
+
 a{
   display: flex;
   justify-content: flex-start;
+}
 
+.hover-underline-animation:hover{
+  color: var(--orange-wheel) ;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative; 
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--orange-wheel);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
