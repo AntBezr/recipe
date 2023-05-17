@@ -37,17 +37,22 @@ if(isLoding){
 }
 
   return (
-    <main>
-    <div>
-      <h2>{data.name}</h2>
-      <img src={data.image} alt={data.name} />
-      <img src={flag} alt="" /> 
-      <h3>{data.description}</h3>
-      <div className='blok'>
-      <h3>Instructions:</h3>
-      {data && data.instructions && Array.isArray(data.instructions) && (
+    <div className='mainInfo'>
+      <div className='recipeInfo'> 
+        <h2>{data.name}</h2>
+        <div className='imageAndDescription'>
+          <div className='images'> 
+            <img id='dish' src={data.image} alt={data.name} />
+            <img className='country' src={flag} alt={data.country} /> 
+          </div>
+          <div className='descAndIngr'>
+
+        <h3>Description:</h3>
+        <h4>{data.description}</h4>
+        <h3>Instructions:</h3>
+        {data && data.instructions && Array.isArray(data.instructions) && (
         <h4>
-          {data.instructions.map((instruction, index) => (
+{data.instructions.map((instruction, index) => (
             <span key={index}>
               {instruction} <br />
             </span>
@@ -55,21 +60,21 @@ if(isLoding){
         </h4>
       )}
 
+
+          </div>
+      
       </div>
+      
+ 
       <div className="blok">
-      <h3>Ingredients</h3>
-      {data && data.ingredients && Array.isArray(data.ingredients) && (
-      <h4>{data.ingredients.map((ingredient, index)=>(
-        <span key={index}>{ingredient.ingredient}- {ingredient.quantity.toLowerCase()} <br/></span>
-      ))}</h4>
-      )}
+      
       </div>
 
 
   
 
     </div>
-    </main>
+    </div>
   );  
 }
 

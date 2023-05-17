@@ -3,7 +3,29 @@
   padding:0;
   box-sizing: border-box;
 }
-main{
+.mainInfo{
   max-width: 1290px;
   min-height: 85vh;
+  margin: 0 auto;
+}
+
+.recipeInfo{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: var(--caput-mortuum-2);
+}
+.imageAndDescription{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.images {
+  position: relative;
+}
+.images #dish{
+  width: 500px;
+}
+.descAndIngr{
+  width: 500px;
 }

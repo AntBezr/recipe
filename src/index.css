@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;700&display=swap');
 :root{
-  --hedFootBG: #F0EDD4;
-  --hedFootText: #998a80 ;
-  --mainBG: #fafbef;
-  --cardBG: #F0EDD4;
-  --cardText: #6B6059 ;
-  --btnBG: #ECCDB4;
-  --btnText: #000000;
-  --accentColor: #FEA1A1; 
-  
   --old-lace: #F5EBDCff;
   --orange-wheel: #FC8631ff;
   --sinopia: #D62302ff;

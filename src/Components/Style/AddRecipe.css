@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  color: var(--caput-mortuum-2);
 }
 .addNew{
   min-height: 85vh;
@@ -32,6 +33,7 @@ h1{
 label{
   margin: 5px;
   font-size: 20px;
+  
 }
 form{
   display: flex;
@@ -44,7 +46,8 @@ button{
   margin-bottom: 16px;
 }
 .addRecipe{
-  background-color: var(--accentColor);
+  background-color: var(--orange-wheel);
+  color: var(--old-lace);
   margin-bottom: 16px;
 }
 .delete{

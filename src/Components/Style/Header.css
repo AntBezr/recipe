@@ -7,10 +7,15 @@
 header{
   width: 100vw;
   height: 10vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display:block;
   background-color: var(--old-lace);
+}
+
+.width{
+  max-width: 1290px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 a{
