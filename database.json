@@ -41,7 +41,7 @@
         {
           "id": 2,
           "ingredient": "Tomatoes",
-          "quantity": "4"
+          "quantity": "4 pcs"
         },
         {
           "id": 3,
@@ -96,7 +96,7 @@
         {
           "id": 3,
           "ingredient": "Eggs",
-          "quantity": "2"
+          "quantity": "2 pcs"
         },
         {
           "id": 4,
@@ -135,17 +135,17 @@
         {
           "id": 2,
           "ingredient": "Pineapple",
-          "quantity": "1"
+          "quantity": "1 pc"
         },
         {
           "id": 3,
           "ingredient": "Corn tortillas",
-          "quantity": "12"
+          "quantity": "12 pcs"
         },
         {
           "id": 4,
           "ingredient": "Onion",
-          "quantity": "1"
+          "quantity": "1 pc"
         },
         {
           "id": 5,
@@ -155,7 +155,7 @@
         {
           "id": 6,
           "ingredient": "Lime",
-          "quantity": "2"
+          "quantity": "2 pcs"
         },
         {
           "id": 7,
@@ -187,8 +187,6 @@
         "Fill the tortillas with the cooked pork, garnish with cilantro, and squeeze lime juice on top",
         "Serve with salsa and enjoy!"
         ]
-      }
-    
-    
+      } 
   ]
 }
