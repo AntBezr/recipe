@@ -20,9 +20,7 @@
         }
       ],
       "instructions": [
-        "Boil water",
-        "Add salt",
-        "Add damplings"
+        "Boil water, Add salt, Add damplings"
       ]
     },
     {
@@ -64,17 +62,8 @@
           "quantity": "To taste"
         }
       ],
-      "instructions": [
-        "Preheat the oven to 220°C",
-        "Roll out the pizza dough into a thin crust",
-        "Spread tomato sauce on the dough",
-        "Add slices of mozzarella on top",
-        "Sprinkle with fresh basil leaves",
-        "Drizzle with olive oil and sprinkle with salt",
-        "Bake for 10-12 minutes or until golden brown"
-      ]
+      "instructions": "Preheat the oven to 220°C, Roll out the pizza dough into a thin crust, Spread tomato sauce on the dough, Add slices of mozzarella on top, Sprinkle with fresh basil leaves, Drizzle with olive oil and sprinkle with salt, Bake for 10-12 minutes or until golden brown"
     },
-    
     {
       "id": 4,
       "country": "Italy",
@@ -109,15 +98,7 @@
           "quantity": "To taste"
         }
       ],
-      "instructions": [
-        "Preheat the oven to 220°C",
-        "Roll out the pizza dough into a thin crust",
-        "Cook the pancetta in a pan until crispy",
-        "In a bowl, beat the eggs and mix in the pecorino cheese and black pepper",
-        "Spread the egg and cheese mixture on the pizza dough",
-        "Sprinkle the cooked pancetta on top",
-        "Bake for 10-12 minutes or until golden brown"
-      ]
+      "instructions": "Preheat the oven to 220°C, Roll out the pizza dough into a thin crust, Cook the pancetta in a pan until crispy, In a bowl, beat the eggs and mix in the pecorino cheese and black pepper, Spread the egg and cheese mixture on the pizza dough, Sprinkle the cooked pancetta on top, Bake for 10-12 minutes or until golden brown"
     },
     {
       "id": 5,
@@ -178,15 +159,23 @@
           "quantity": "1 teaspoon"
         }
       ],
-      "instructions": [
-        "Slice the pork shoulder into thin strips",
-        "In a blender, blend the pineapple, onion, garlic, achiote paste, cumin, and oregano to make a marinade",
-        "Marinate the pork in the marinade for at least 2 hours or overnight",
-        "Heat a pan and cook the marinated pork until cooked through",
-        "Warm the corn tortillas on a griddle",
-        "Fill the tortillas with the cooked pork, garnish with cilantro, and squeeze lime juice on top",
-        "Serve with salsa and enjoy!"
-        ]
-      } 
+      "instructions": "Slice the pork shoulder into thin strips. In a blender, blend the pineapple, onion, garlic, achiote paste, cumin, and oregano to make a marinade, Marinate the pork in the marinade for at least 2 hours or overnight, Heat a pan and cook the marinated pork until cooked through, Warm the corn tortillas on a griddle, Fill the tortillas with the cooked pork, garnish with cilantro, and squeeze lime juice on top, Serve with salsa and enjoy!"
+    },
+    {
+      "country": "Heard Island and McDonald Islands",
+      "name": "DSA",
+      "image": "фывфы",
+      "author": "bobo",
+      "description": "sad",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingredient": "",
+          "quantity": ""
+        }
+      ],
+      "instructions": "sad",
+      "id": 6
+    }
   ]
 }

@@ -13,7 +13,7 @@ label{
   font-weight: 600;
 }
 
-input{
+input, textarea{
   border: none;
   background-color: var(--old-lace);
   color: var(--caput-mortuum);

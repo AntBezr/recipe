@@ -9,7 +9,8 @@ function RecipeInfo() {
   const navigate = useNavigate();
   const [data, setData] = useState([]);
   const [flag, setFlag] = useState("");
-  const [isLoding, setIsLoading] = useState(false);
+  const [dishImage, setImage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     setIsLoading(true);
@@ -22,15 +23,31 @@ function RecipeInfo() {
         axios
           .get(`https://restcountries.com/v3.1/name/${res.data.country}`)
           .then((res) => setFlag(res.data[0].flags.svg));
-
         setIsLoading(false);
       })
-      .catch((error) => {
-        setIsLoading(false);
+      .catch(function (error) {
+        /*    <Error />; */
       });
   }, []);
 
-  if (isLoding) {
+  function checkIfImageExists(url, callback) {
+    const img = new Image();
+    img.src = url;
+
+    if (img.complete) {
+      callback(true);
+    } else {
+      img.onload = () => {
+        callback(true);
+      };
+
+      img.onerror = () => {
+        callback(false);
+      };
+    }
+  }
+
+  if (isLoading) {
     return <Loader />;
   }
 
@@ -40,7 +57,14 @@ function RecipeInfo() {
         <h2>{data.name}</h2>
         <div className="imageAndDescription">
           <div className="images">
-            <img id="dish" src={data.image} alt={data.name} />
+            <img
+              id="dish"
+              src={data.image}
+              onError={(e) => {
+                e.target.src = require("../images/notFound.webp");
+              }}
+              alt={data.name}
+            />
             <img className="country" src={flag} alt={data.country} />
           </div>
           <div className="descAndIngr">
@@ -70,15 +94,7 @@ function RecipeInfo() {
             </div>
             <div className="box">
               <h3>Instructions:</h3>
-              {data.instructions && (
-                <h4>
-                  {data.instructions.map((instruction, index) => (
-                    <span key={index}>
-                      {instruction} <br />
-                    </span>
-                  ))}
-                </h4>
-              )}
+              <h4>{data.instructions}</h4>
             </div>
             <div className="box">
               <h3>Author:</h3>
