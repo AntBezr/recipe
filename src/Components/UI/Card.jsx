@@ -3,17 +3,11 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import "./Card.css";
 import Loader from "./Loader";
+import PropTypes from "prop-types";
 
 function Card({ id, name, country, image }) {
   const [flag, setFlag] = useState("");
   const [isLoding, setIsLoding] = useState(false);
-
-  /*   ReactPropTypes = {
-    id: ReactPropTypes.integer.isRequired,
-    name: ReactPropTypes.string.isRequired,
-    country: ReactPropTypes.string.isRequired,
-    image: ReactPropTypes.string.isRequired,
-  }; */
 
   useEffect(() => {
     setIsLoding(true);
@@ -53,5 +47,12 @@ function Card({ id, name, country, image }) {
     </div>
   );
 }
+
+Card.propTypes = {
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  country: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+};
 
 export default Card;

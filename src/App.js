@@ -5,6 +5,7 @@ import Home from './Components/Home'
 import RecipeList from './Components/RecipeList'
 import AddRecipe from './Components/AddRecipe'
 import RecipeInfo from './Components/RecipeInfo';
+import React from 'react';
 
 
 function App() {
