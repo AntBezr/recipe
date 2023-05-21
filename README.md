@@ -1,7 +1,7 @@
 # Recipe App / Punny Palate
 
 This Recipe app is a part of studying.
-At this app user can view the list of existing recipes and even add his own.
+In this app user can view the list of existing recipes and even add his own.
 
 ## Technologies used
 
@@ -15,18 +15,18 @@ Built with:
 
 ### Live page
 
-At the current moment this app doesn't have a live page because of use local JSON-server.
+Currently, this app doesn't have a live page because of use local JSON server.
 
 ### How to start app at local server
 
-To start this app at local machine you need to use two comands:
+To start this app at local machine you need to use two commands:
 
 `npm start` and `npm run json-start`
 
 "npm start" Runs the app in the development mode.
 [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-"npm run json-start" Runs json server with recepies.
+"npm run json-start" Runs json server with recipes.
 [http://localhost:4001](http://localhost:4001) to view it in browser
 
 ## Screenshoot
