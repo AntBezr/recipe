@@ -34,16 +34,18 @@ function Card({ id, name, country, image }) {
       <div className="country">
         <img src={flag} alt={country} />
       </div>
-      <div className="image">
-        <img
-          id="dish"
-          src={image}
-          onError={(e) => {
-            e.target.src = require("../../images/notFound.webp");
-          }}
-          alt={name}
-        />
-      </div>
+      <Link to={id.toString()}>
+        <div className="image">
+          <img
+            id="dish"
+            src={image}
+            onError={(e) => {
+              e.target.src = require("../../images/notFound.webp");
+            }}
+            alt={name}
+          />
+        </div>
+      </Link>
       <h3>{name}</h3>
       <Link to={id.toString()}>
         <button>See more...</button>

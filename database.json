@@ -160,6 +160,50 @@
         }
       ],
       "instructions": "Slice the pork shoulder into thin strips. In a blender, blend the pineapple, onion, garlic, achiote paste, cumin, and oregano to make a marinade, Marinate the pork in the marinade for at least 2 hours or overnight, Heat a pan and cook the marinated pork until cooked through, Warm the corn tortillas on a griddle, Fill the tortillas with the cooked pork, garnish with cilantro, and squeeze lime juice on top, Serve with salsa and enjoy!"
+    },
+    {
+      "id": 6,
+      "country": "Italy",
+      "name": "Spaghetti Carbonara",
+      "image": "https://i.pinimg.com/564x/0b/0d/22/0b0d22a3ce4c78b09a243e445e4f6352.jpg",
+      "author": "Giulia",
+      "description": "A classic Italian pasta dish with a creamy sauce.",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingredient": "Spaghetti",
+          "quantity": "200 grams"
+        },
+        {
+          "id": 2,
+          "ingredient": "Guanciale or Pancetta",
+          "quantity": "100 grams"
+        },
+        {
+          "id": 3,
+          "ingredient": "Egg yolks",
+          "quantity": "2"
+        },
+        {
+          "id": 4,
+          "ingredient": "Grated Pecorino Romano cheese",
+          "quantity": "50 grams"
+        },
+        {
+          "id": 5,
+          "ingredient": "Black pepper",
+          "quantity": "To taste"
+        },
+        {
+          "id": 6,
+          "ingredient": "Salt",
+          "quantity": "To taste"
+        }
+      ],
+      "instructions": [
+        "Cook the spaghetti according to package instructions until al dente. In a pan, cook the guanciale or pancetta until crispy. In a bowl, whisk together the egg yolks, grated Pecorino Romano cheese, black pepper, and a pinch of salt. Drain the cooked spaghetti and immediately add it to the pan with the cooked guanciale or pancetta, tossing to combine. Remove the pan from the heat and quickly pour in the egg mixture, stirring vigorously to coat the pasta and create a creamy sauce. Serve immediately with an additional sprinkle of grated Pecorino Romano cheese and black pepper on top."
+      ]
     }
+    
   ]
 }
