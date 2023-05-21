@@ -1,38 +1,62 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Style/Home.css'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Style/Home.css";
+import hero from "../videos/hero.mp4";
 
-function Home(props) {
+function Home() {
   return (
-    <div className='homeMain'>
-      <div className='hero'> 
-   
-    </div>
-    <div className='cardsBox'>
-     
-        <div className='linkBox'>
+    <div className="homeMain">
+      <div className="hero">
+        <video
+          src={hero}
+          autoPlay={true}
+          loop
+          width={1290}
+          height={640}
+          type="video/mp4"
+          muted
+        ></video>
+      </div>
+      <div className="cardsBox">
+        <div className="linkBox">
           <h3>Browse Recipes</h3>
-          <p>Find your Favorites in this unic collection. You can search reacipes based on name.</p>
-          <Link to={"/recipes"} className="hover-underline-animation"> All recipes </Link>
+          <p>
+            Find your Favorites in this unic collection. You can search reacipes
+            based on name.
+          </p>
+          <Link to={"/recipes"} className="hover-underline-animation">
+            {" "}
+            All recipes{" "}
+          </Link>
         </div>
-    
-     
-        <div className='linkBox'>
+
+        <div className="linkBox">
           <h3>Add recipes</h3>
-          <p>Do you whant to share your own recipe or ypur national recipe ? Add it now !</p>
-          <Link to={"/addRecipe"} className="hover-underline-animation"> Add recipe </Link>
+          <p>
+            Do you whant to share your own recipe or ypur national recipe ? Add
+            it now !
+          </p>
+          <Link to={"/addRecipe"} className="hover-underline-animation">
+            {" "}
+            Add recipe{" "}
+          </Link>
         </div>
-    
-    
-        <div className='linkBox'>
+
+        <div className="linkBox">
           <h3>Whant to know more about our projects?</h3>
           <p>Visit our programme homepage</p>
-            <Link to={"https://en.bc.fi/qualifications/full-stack-web-developer-program/"} className="hover-underline-animation" target="_blank">Business College Helsinki homepage</Link>
+          <Link
+            to={
+              "https://en.bc.fi/qualifications/full-stack-web-developer-program/"
+            }
+            className="hover-underline-animation"
+            target="_blank"
+          >
+            Business College Helsinki homepage
+          </Link>
         </div>
-
+      </div>
     </div>
-    </div>
-    
   );
 }
 

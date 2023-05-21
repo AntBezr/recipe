@@ -7,7 +7,13 @@ import Loader from "./Loader";
 function Card({ id, name, country, image }) {
   const [flag, setFlag] = useState("");
   const [isLoding, setIsLoding] = useState(false);
-  const [errorImg, setImg] = useState("kartinki net(");
+
+  /*   ReactPropTypes = {
+    id: ReactPropTypes.integer.isRequired,
+    name: ReactPropTypes.string.isRequired,
+    country: ReactPropTypes.string.isRequired,
+    image: ReactPropTypes.string.isRequired,
+  }; */
 
   useEffect(() => {
     setIsLoding(true);
@@ -18,7 +24,7 @@ function Card({ id, name, country, image }) {
         alert(error);
       });
     setIsLoding(false);
-  }, []);
+  }, [country]);
 
   if (isLoding) {
     return <Loader />;

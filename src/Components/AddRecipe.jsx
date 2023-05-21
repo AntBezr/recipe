@@ -192,10 +192,11 @@ function AddRecipe() {
             {ingredientsList.map((val, i) => (
               <div className="ingredientBox" key={i}>
                 <div className="inputBox">
-                  <label htmlFor="">Ingredient</label>
+                  <label htmlFor="ingredient">Ingredient</label>
                   <input
                     type="text"
                     name="ingredient"
+                    id="ingredient"
                     value={val.ingredient}
                     onChange={(e) => {
                       changeHandler(e, i);
@@ -203,10 +204,11 @@ function AddRecipe() {
                   />
                 </div>
                 <div className="inputBox">
-                  <label htmlFor="">Quantity</label>
+                  <label htmlFor="quantity">Quantity</label>
                   <input
                     type="text"
                     name="quantity"
+                    id="quantity"
                     value={val.quantity}
                     onChange={(e) => {
                       changeHandler(e, i);

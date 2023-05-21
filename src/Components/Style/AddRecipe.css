@@ -1,14 +1,18 @@
+
+
 *{
   margin:0;
   padding:0;
   box-sizing: border-box;
 }
+
 .mainAdd{
   display: flex;
   justify-content: center;
   width: 100%;
   color: var(--caput-mortuum-2);
 }
+
 .addNew{
   min-height: 85vh;
   max-width: 1290px;
@@ -53,10 +57,13 @@ button{
   margin-bottom: 16px;
 }
 .addRecipe{
-  background-color: var(--orange-wheel);
-  color: var(--old-lace);
+  background-color: var(--old-lace);
+  color: var(--caput-mortuum-2);
   margin-bottom: 16px;
+
 }
+
+
 .delete{
   height: 20px;
   width: 20px;

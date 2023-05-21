@@ -160,22 +160,6 @@
         }
       ],
       "instructions": "Slice the pork shoulder into thin strips. In a blender, blend the pineapple, onion, garlic, achiote paste, cumin, and oregano to make a marinade, Marinate the pork in the marinade for at least 2 hours or overnight, Heat a pan and cook the marinated pork until cooked through, Warm the corn tortillas on a griddle, Fill the tortillas with the cooked pork, garnish with cilantro, and squeeze lime juice on top, Serve with salsa and enjoy!"
-    },
-    {
-      "country": "Heard Island and McDonald Islands",
-      "name": "DSA",
-      "image": "фывфы",
-      "author": "bobo",
-      "description": "sad",
-      "ingredients": [
-        {
-          "id": 1,
-          "ingredient": "",
-          "quantity": ""
-        }
-      ],
-      "instructions": "sad",
-      "id": 6
     }
   ]
 }

@@ -6,10 +6,9 @@ import axios from "axios";
 
 function RecipeInfo() {
   const params = useParams();
-  const navigate = useNavigate();
+  const navigation = useNavigate();
   const [data, setData] = useState([]);
   const [flag, setFlag] = useState("");
-  const [dishImage, setImage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -28,24 +27,7 @@ function RecipeInfo() {
       .catch(function (error) {
         /*    <Error />; */
       });
-  }, []);
-
-  function checkIfImageExists(url, callback) {
-    const img = new Image();
-    img.src = url;
-
-    if (img.complete) {
-      callback(true);
-    } else {
-      img.onload = () => {
-        callback(true);
-      };
-
-      img.onerror = () => {
-        callback(false);
-      };
-    }
-  }
+  }, [params.id]);
 
   if (isLoading) {
     return <Loader />;
@@ -54,6 +36,9 @@ function RecipeInfo() {
   return (
     <div className="mainInfo">
       <div className="recipeInfo">
+        <button className="back" type="button" onClick={() => navigation(-1)}>
+          <span className="material-symbols-outlined">arrow_back</span>
+        </button>
         <h2>{data.name}</h2>
         <div className="imageAndDescription">
           <div className="images">
