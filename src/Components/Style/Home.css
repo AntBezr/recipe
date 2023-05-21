@@ -19,7 +19,6 @@ video{
 }
 .hero{
   height: 50vh;
-/*   background: url(../../images/LandingBg.avif) no-repeat  fixed   */
 }
 
 .cardsBox{
@@ -34,6 +33,7 @@ min-height: 35vh;
   height: 150px;
   display: flex;
   flex-wrap: wrap;
+  flex-flow: row wrap;
   flex-direction: column;
   border:solid var(--sinopia) 1px;
   margin: auto 0;

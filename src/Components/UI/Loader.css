@@ -4,6 +4,7 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  flex-flow: row wrap;
   min-height: 85vh;
 }
 .loader {

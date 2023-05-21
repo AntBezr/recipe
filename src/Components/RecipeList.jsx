@@ -1,11 +1,10 @@
-import React from "react";
 import Card from "./UI/Card";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Loader from "./UI/Loader";
 import "./Style/RecipeList.css";
 
-function RecipeList(props) {
+function RecipeList() {
   const [recipes, setRecipes] = useState([]);
   const [searchInput, setSeatchInput] = useState("");
   const [isLoding, setIsLoding] = useState(false);

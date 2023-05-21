@@ -28,7 +28,7 @@ function Card({ id, name, country, image }) {
       <div className="country">
         <img src={flag} alt={country} />
       </div>
-      <Link to={id.toString()}>
+      <Link to={id.toString()} className="imgLink">
         <div className="image">
           <img
             id="dish"

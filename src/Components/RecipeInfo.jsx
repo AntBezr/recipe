@@ -21,11 +21,14 @@ function RecipeInfo() {
 
         axios
           .get(`https://restcountries.com/v3.1/name/${res.data.country}`)
-          .then((res) => setFlag(res.data[0].flags.svg));
+          .then((results) => setFlag(results.data[0].flags.svg))
+          .catch(function (error) {
+            alert(error);
+          });
         setIsLoading(false);
       })
       .catch(function (error) {
-        /*    <Error />; */
+        alert(error);
       });
   }, [params.id]);
 

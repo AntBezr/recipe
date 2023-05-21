@@ -1,7 +1,7 @@
-import React from 'react';
-import './Style/Footer.css'
+import React from "react";
+import "./Style/Footer.css";
 
-function Footer(props) {
+function Footer() {
   return (
     <footer>
       <small>React23K Anton Bezruchenkov</small>

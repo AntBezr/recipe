@@ -47,7 +47,6 @@ function AddRecipe() {
   };
 
   const changeHandler = (e, i) => {
-    console.log(e.target, e.target.value);
     const { name, value } = e.target;
     let changeValue = [...ingredientsList];
     switch (name) {
@@ -95,7 +94,7 @@ function AddRecipe() {
         instructions: recipeInstruction,
       })
       .catch(function (error) {
-        console.log(error);
+        alert(error);
       });
     alert("New recipe has been added ! ");
   };
@@ -138,6 +137,7 @@ function AddRecipe() {
           <div className="inputBox">
             <label htmlFor="countryList">Country of origin</label>
             <input
+              required
               id="countryList"
               list="country"
               name="country"
@@ -177,7 +177,7 @@ function AddRecipe() {
           </div>
 
           <div className="inputBox">
-            <label htmlFor="image">Image</label>
+            <label htmlFor="image">Image url</label>
             <input
               type="text"
               name="image"
@@ -194,6 +194,7 @@ function AddRecipe() {
                 <div className="inputBox">
                   <label htmlFor="ingredient">Ingredient</label>
                   <input
+                    required
                     type="text"
                     name="ingredient"
                     id="ingredient"
@@ -206,6 +207,7 @@ function AddRecipe() {
                 <div className="inputBox">
                   <label htmlFor="quantity">Quantity</label>
                   <input
+                    required
                     type="text"
                     name="quantity"
                     id="quantity"
