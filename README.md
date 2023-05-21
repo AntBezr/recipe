@@ -45,6 +45,6 @@ Anton Bezruchenkov
 
 ### Ideas and some code solutions
 
-Margit Tennosaar - [GitHub](https://github.com/margittennosaar)
+Margit Tennosaar - [GitHub](https://github.com/margittennosaar) \
 Valeria Vagapova - [GitHub](https://github.com/pixelsnow)
 [ChatGPT](https://chat.openai.com/)
