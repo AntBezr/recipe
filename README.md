@@ -9,6 +9,8 @@ Built with:
 
 - React
 - CSS
+- Json Server
+- Axios
 - ESlint
 
 ## Setup and usage
